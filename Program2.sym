@@ -1,0 +1,15 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	BREAKCOMP               300B
+//	COMPARE                 3008
+//	COMPAREN                3018
+//	COMPARENN               301B
+//	COMPARENP               3020
+//	COMPAREP                300F
+//	COMPAREPN               3012
+//	COMPAREPP               3013
+//	FINISH                  3027
+//	LOOP                    3007
+//	SETNEW                  3021
+//	START                   3000
+//	SWITCH                  3024
