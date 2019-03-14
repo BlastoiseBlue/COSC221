@@ -2,6 +2,7 @@
 ; Last Name: Stanevich
 ; ID: E01705769
 ; Assignment #2
+; 2/25/19
 ; This program will scan the contents of x7000 to x7009, and swap the smallest number wih the number in x7000
 ;R0 <- THE LOCATION OF THE ARRAY
 ;R1 <- HOLDS THE VALUE STORED AT THE ADDRESS DESIGNATED BY R0
