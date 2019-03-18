@@ -13,11 +13,10 @@
 ;R6 <- HOLDS THE POSITION OF THE SMALLEST VALUE IN THE ARRAY
 ;R7 <- HOLDS THE FIRST VALUE OF THE ARRAY
 .ORIG X3000
-LD R0,START	;SETS R0 TO X4000
+LD R0,START	;SETS R0 TO X7000
 ADD R5,R0,#0	;SETS R5 TO THE FIRST ADDRESS
 LDR R7,R0,#0	;SETS R7 TO THE FIRST VALUE
 ADD R4,R4,#10;SETS THE COUNTER TO 10
-;ADD R5,R5,#1	;SETS THE POINTER TO X4000
 LDR R2,R0,#0	;SETS R2 TO THE VALUE POINTED AT BY R0
 ADD R6,R0,#0
 LOOP	LDR R1,R0,#0	;LOADS THE VALUE OF THE ADDRESS DESIGNATED BASED ON R0 INTO R1
@@ -61,30 +60,6 @@ BRNZP BREAKCOMP
 SWITCH	STR R2,R5,#0	;STORES THE VALUE STORED IN R2 INTO THE LOCATION POINTED AT BY R5
 STR R7,R6,#0	;	STORES THE VALUE STORED IN R7 INTO THE LOCATION POINTED AT BY R6
 BRNZP FINISH
-
-;COUNTER	and r4,r4,0	;clear r4, to be used as a counter
-;ARRAYREF	and r0,r0,0	;clear r0, which will be made to point to the array
-;CURRENT	and r1,r1,0	;clear r1, to hold the current value
-;SMALLEST	and r2,r2,0	;clear r2, to hold the smallest current value
-;COMPARATOR	and r3,r3,0	;clear r3, to be used to find if the current address holds a smaller value than what is stored in r2
-;POINTER	and r5,r5,0	;clear r5, to be used as a pointer
-;SMALLESTADD	and r6,r6,0	;clear r6, which stores the address of the smallest current value
-;ADD R0,R0,x7000
-; ADD r4,r4,#10	;sets the counter to 10
-; LOOP	LDR 
-; brp LOOP
 FINISH	HALT
 START	.FILL x7000
 .END
-; .ORIG x7000
-; x123F
-; x6534
-; x300F
-; x4005
-; x3F19
-; x2D2F
-; x1200
-; x0042
-; x12AA
-; x54EF
-; .END
